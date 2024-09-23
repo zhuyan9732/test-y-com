@@ -3,7 +3,7 @@ name: Deploy Storybook to GitHub Pages
 on:
   push:
     branches:
-      - main # 每次推送到 main 分支时触发工作流
+      - master # 每次推送到 main 分支时触发工作流
 
 jobs:
   build-deploy:
