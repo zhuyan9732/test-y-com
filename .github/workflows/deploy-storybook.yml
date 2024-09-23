@@ -30,7 +30,11 @@ jobs:
 
       # 5. 部署到 GitHub Pages
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./storybook-static # 指定生成的 Storybook 静态文件目录
+          publish_dir: ./storybook-static # Storybook 输出目录
+          publish_branch: gh-pages # 目标分支
+          user_name: "zhuyan9732" # Git 用户名
+          user_email: "zhuyan9732@163.com" # Git 用户邮箱
+          force_orphan: true # 强制创建新的 orphan 分支，避免历史冲突
