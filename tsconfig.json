@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "outDir": "dist",
+    "jsx": "react-jsx"
+  },
+  "include": [
+    "src/Button/*.ts",
+    "src/Wrap/*.ts",
+    "globals.d.ts"
+  ],
+}
