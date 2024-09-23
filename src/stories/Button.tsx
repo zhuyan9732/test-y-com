@@ -25,7 +25,7 @@ export const Button = ({ primary = false, size = "medium", backgroundColor, labe
       style={{ backgroundColor }}
       {...props}
     >
-      {label}111111111111111
+      {label}11111122222
     </button>
   );
 };
